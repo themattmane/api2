@@ -1,6 +1,10 @@
 # -- https://pypi.python.org/pypi/geolocation-python/0.2.0 -- geolocation
 #############################
 ##!flask/bin/python
+##################################
+## IMPORTED PACKAGES & EXTENSIONS
+##################################
+
 from flask import Flask, jsonify, request, abort, render_template
 import requests
 import datetime
@@ -8,9 +12,16 @@ import pymysql
 import string
 import random
 import uuid
+
+app = Flask(__name__)
+
+###############################
+#     TIMESTAMPING LOGIC
+###############################
+
 now = datetime.datetime.now()
 utctime = datetime.datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S") #Variable is set to current time it is pulling from
-app = Flask(__name__)
+
 ###############################
 #     RANDOM VALUE GENERATORS
 ###############################
