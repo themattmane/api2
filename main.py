@@ -26,7 +26,7 @@ utctime = datetime.datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S") #Variable is 
 #     RANDOM VALUE GENERATORS
 ###############################
 
-def id_generator(size=32, chars=string.ascii_uppercase + string.digits): #Specifices to only use random upper case & #s
+def id_generator(size=32, chars=string.ascii_lowercase + string.digits): #Specifices to only use random upper case & #s
     return ''.join(random.choice(chars) for _ in range(size)) #FInds size worth of random values using parameters set
 
 def uuid_generator(): #Can be used globally to return a random uuid
