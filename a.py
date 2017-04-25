@@ -68,3 +68,14 @@ if __name__ == '__main__':
 #  keyid VARCHAR(100) UNIQUE,
 #  lastupdate TEXT,
 #  PRIMARY KEY (dbid));
+
+    #WEATHER DATA
+    #current_lng = latlng.rsplit(',', 1)[0]
+    #current_lat = latlng.rsplit(',', 1)[1]
+    #response = requests.get("http://api.openweathermap.org/data/2.5/weather?lat="
+    #                        + current_lat + "&lon=" + current_lng + "&appid=" + weather_key + "")
+    #json_object = response.json()
+    #temp = round(float(json_object['main']['temp']))
+    # if latlng and userid and sessionid == None:
+    #    abort(400) #400 error did not supply latlng or sessionid or userid
+    # else:
